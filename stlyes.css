@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  /* background-color:   #3d5a80; */
+}
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  height: 9rem;
+  width: 100%;
+  z-index: 100;
+}
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+.nav__item {
+  margin-left: 5rem;
+}
+.nav-logo {
+  height: 4.5rem;
+  transition: all 3s;
+}
+.nav__link.nav__link--btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #3d5a80;
+  padding: 0.3rem 2.5rem;
+  border-radius: 3rem;
+
+  /* box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25); */
+}
+.nav__link,
+.link .nav_link:visited {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+  font-family: poppins;
+}
+.nav__link--btn:hover,
+.nav__link--btn:active {
+  color: inherit;
+  background-color: #3d5a80;
+  color: #ffffff;
+}
+.hamburger {
+  display: none;
+}
+/* media quries for nav */
+@media only screen and (max-width: 768px) {
+  .nav {
+    border-bottom: 1px solid #3d5a80;
+  }
+
+  .nav__links {
+    position: fixed;
+    left: -100%;
+    top: 7rem;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(180deg, #3d5a80 0%, #5a7292 100%);
+    box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+  }
+  .nav__link {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .nav__links.active {
+    left: 0;
+  }
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .hamburger i {
+    margin-left: 20px;
+  }
+}
+
+.header {
+  background-image: url("img/Rectangle\ 17\ \(3\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+}
+.hero-page {
+  flex: 1;
+  max-width: 115rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: start;
+  justify-items: start;
+}
+.header-title {
+  width: 40%;
+  margin-top: 100px;
+}
+h3 {
+  font-size: 3.5rem;
+  line-height: 46.03px;
+  color: #ffffff;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.btn__login {
+  background-color: #3d5a80;
+  color: #ffffff;
+  padding: 0.7rem 4rem;
+  border: 2px solid #ffffff;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  margin-left: 15px;
+  box-shadow: 0px 5px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* about */
+
+.about {
+  background: linear-gradient(180deg, #3d5a80 0%, #5a7292 100%);
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Registration page */
+.head {
+  background-image: url("img/Rectangle\ 6\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: contain;
+  height: 100vh;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+}
+.intro-section {
+  text-align: center;
+}
+.intro-section p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.subcription__wrapper{
+  counter-reset: number;
+  display: flex;
+  row-gap: 10px;
+  justify-content: center;
+  margin: 7.5rem 0;
+  flex-wrap: wrap;
+}
+.content {
+  padding: 2rem;
+  width: 250px;
+  margin: 0 0.5rem 2rem;
+  background: #98c1d9;
+  border-radius: 3rem;
+  align-content: center;
+  position: relative;
+}
+.content::before{
+  counter-increment: number;
+  content: counter(number);
+  height: 5rem;
+  width: 5rem;
+  background: #ffffff;
+  color: #3D5A80;
+  border: 4.51px solid #3D5A80;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  top: -2rem;
+  left: 10rem;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.card-heading{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+
+}
+.content h1{
+  text-align: center;
+}
+.content p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+ol{
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.card2{
+   background: #293241;
+  
+}
+.card2 h1{
+  color: #ffffff;
+}
+.card-time{
+  color: #ffffff;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .head {
+    background-image: url("img/Rectangle\ 59.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: contain;
+     height: 100vh; 
+    box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+    background-color: #3d5a80;
+  }
+}
