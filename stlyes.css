@@ -177,55 +177,65 @@ h4 {
 .subcription__wrapper{
   counter-reset: number;
   display: flex;
-  row-gap: 10px;
+  row-gap: 7rem;
+  column-gap:2rem;
   justify-content: center;
   margin: 7.5rem 0;
   flex-wrap: wrap;
 }
 .content {
-  padding: 2rem;
-  width: 250px;
+  padding: 3rem 2rem;
+  width: 219px;
   margin: 0 0.5rem 2rem;
   background: #98c1d9;
-  border-radius: 3rem;
+  border-radius: 3.5rem;
   align-content: center;
   position: relative;
 }
 .content::before{
   counter-increment: number;
   content: counter(number);
-  height: 5rem;
-  width: 5rem;
+  height: 9.5rem;
+  width: 9.5rem;
   background: #ffffff;
   color: #3D5A80;
   border: 4.51px solid #3D5A80;
   position: absolute;
   display: block;
   border-radius: 50%;
-  top: -2rem;
-  left: 10rem;
-  font-size: 3rem;
+  top: -7rem;
+  left: 5rem;
+  font-size: 6rem;
   font-weight: bold;
-  line-height: 4rem;
+  line-height: 9rem;
   text-align: center;
+  justify-content:center;
 }
 
 .card-heading{
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 5px;
+  text-decoration-line:underline;
+  font style: SemiBold
+  line-height:3rem;
+  font-weight:700;
 
 }
 .content h1{
   text-align: center;
+  color:#ffffff;
+  font-size:3.5rem;
+  font-weight:bold;
+ 
 }
 .content p {
   text-align: center;
   font-size: 1.5rem;
+  
 }
 ol{
-  line-height: 2.5rem;
-  font-size: 1.2rem;
+  line-height: 2rem;
+  font-size:14.19px;
   color: #ffffff;
 }
 .card2{
@@ -237,6 +247,17 @@ ol{
 }
 .card-time{
   color: #ffffff;
+  text-align:center;
+  margin-top:-20px;
+  
+
+}
+.card-times{
+  color: #ffffff;
+  text-align:center;
+  margin-top:20px;
+
+
 }
 
 
