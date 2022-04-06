@@ -174,11 +174,11 @@ h4 {
   color: #ffffff;
 }
 
-.subcription__wrapper{
+.subcription__wrapper {
   counter-reset: number;
   display: flex;
   row-gap: 7rem;
-  column-gap:2rem;
+  column-gap: 2rem;
   justify-content: center;
   margin: 7.5rem 0;
   flex-wrap: wrap;
@@ -192,14 +192,14 @@ h4 {
   align-content: center;
   position: relative;
 }
-.content::before{
+.content::before {
   counter-increment: number;
   content: counter(number);
   height: 9.5rem;
   width: 9.5rem;
   background: #ffffff;
-  color: #3D5A80;
-  border: 4.51px solid #3D5A80;
+  color: #3d5a80;
+  border: 4.51px solid #3d5a80;
   position: absolute;
   display: block;
   border-radius: 50%;
@@ -209,66 +209,180 @@ h4 {
   font-weight: bold;
   line-height: 9rem;
   text-align: center;
-  justify-content:center;
+  justify-content: center;
 }
 
-.card-heading{
+.card-heading {
   text-align: center;
   margin-bottom: 5px;
-  text-decoration-line:underline;
-  font style: SemiBold
-  line-height:3rem;
-  font-weight:700;
-
+  text-decoration-line: underline;
+  line-height: 3rem;
+  font-weight: 7;
 }
-.content h1{
+.content h1 {
   text-align: center;
-  color:#ffffff;
-  font-size:3.5rem;
-  font-weight:bold;
- 
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 .content p {
   text-align: center;
   font-size: 1.5rem;
-  
 }
-ol{
+ol {
   line-height: 2rem;
-  font-size:14.19px;
+  font-size: 14.19px;
   color: #ffffff;
 }
-.card2{
-   background: #293241;
-  
+.card2 {
+  background: #293241;
 }
-.card2 h1{
+.card2 h1 {
   color: #ffffff;
 }
-.card-time{
+.card-time {
   color: #ffffff;
-  text-align:center;
-  margin-top:-20px;
-  
-
+  text-align: center;
+  margin-top: -20px;
 }
-.card-times{
+.card-times {
   color: #ffffff;
-  text-align:center;
-  margin-top:20px;
-
-
+  text-align: center;
+  margin-top: 20px;
 }
-
 
 @media only screen and (max-width: 768px) {
-  
   .head {
     background-image: url("img/Rectangle\ 59.png");
     background-repeat: no-repeat;
     background-size: 100%;
     object-fit: contain;
-     height: 100vh; 
+    height: 100vh;
+    box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+    background-color: #3d5a80;
+  }
+}
+/* <i class="fa fa-cc-visa" aria-hidden="true"></i>
+ */
+
+/* payment page */
+.payment_wrapper {
+  background-image: url("img/Rectangle\ 6\ \(4\).png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: contain;
+  height: 100vh;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+}
+
+.form__wrapper {
+  max-width: 350px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+}
+.form__wrapper .payment__title {
+  background: #3d5a80;
+  margin-left: -30px;
+  text-align: start;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 2rem;
+  width: 80%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0.7rem;
+}
+.payment__cards {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  column-gap: 10px;
+
+}
+
+.payment__cards  ul {
+  list-style-type: circle;
+  color:  #3d597f;
+  font-size: 1rem;
+  margin-right: 20px;
+
+}
+
+
+
+
+.inputfield {
+  margin-bottom: 10px;
+}
+.inputfield .input {
+  width: 100%;
+  padding: 5px 3px;
+  border-radius: 8px;
+  offset: 0px, 2.46px;
+  border: solid #e5e5e5;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+  border: 1px solid #3d597f;
+  outline: none;
+  color: #0d1f3d;
+  position: relative;
+}
+.inputfield label {
+  display: block;
+  color: #0d1f3d;
+}
+.expiration__wrapper {
+  display: flex;
+}
+.expiration_date {
+  width: 70%;
+  padding: 3px;
+  border-radius: 8px;
+  offset: 0px, 2.46px;
+  border: 1px solid #3d597f;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  outline: none;
+  color: #0d1f3d;
+}
+.visa__icon {
+  
+  margin-left: -50px;
+  position: absolute;
+  padding: 4px;
+  height: 2.5rem;
+}
+.submit--btn {
+  display: flex;
+  justify-content: space-between;
+}
+.submit__btn {
+  padding: 5px 3px;
+  width: 60%;
+  border-radius: 8px;
+  background: #3d5a80;
+  outline: none;
+  color: #ffffff;
+  border: 1px solid #3d597f;
+}
+.button__payment {
+  padding: 3px 20px;
+  border-radius: 8px;
+  color: #3d597f;
+  outline: none;
+  border: 1px solid #3d597f;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .payment_wrapper{
+    background-image: url("img/Rectangle\ 59.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: contain;
+    height: 100vh;
     box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.25);
     background-color: #3d5a80;
   }
