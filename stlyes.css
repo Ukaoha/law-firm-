@@ -387,3 +387,109 @@ ol {
     background-color: #3d5a80;
   }
 }
+
+
+/* login page */
+.login__wrapper{
+  display: flex;
+  justify-content: space-between;
+  background-color: #3d5a80;
+}
+.login__logo{
+  width: 50%;
+  background-color: #3d5a80;
+  height: 100vh;
+}
+.main-login{
+  background-image: url('img/login.png');
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.login__page{
+  width: 100%;
+  padding: 30px 0;
+  margin: 12% auto;
+  /* border: solid #ffffff; */
+  
+
+}
+.login__page h2{
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+}
+.input-box{
+  margin: 31px auto;
+  width: 50%;
+  border-bottom: 1px solid #fff;
+  padding-top: 10px ;
+  padding-bottom: 5px;
+}
+.input-box input{
+  width: 90%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.input-box input ::placeholder{
+  color: #fff;
+  font-size: 1rem;
+}
+#hide1{
+  display: none;
+}
+.eye{
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.remember__me{
+  margin: 50px auto;
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+
+  
+}
+.remeber_box label{
+  font-size: 1.5rem;
+}
+
+.remeber_box label a {
+  font-size: 1.5rem;
+  color: #353DF6;
+
+}
+.sign-up{
+  text-align: center;
+  
+}
+.btn-login--page{
+  padding: 1rem 4rem;
+  border-radius: 3rem;
+  background-color: #3d597f;
+  color: #fff;
+  font-size: 1.5rem;
+  outline: none;
+  border: 1px solid #E4D9D9;
+  cursor: pointer;
+}
+.sign-up p{
+  margin-top: 25px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+/* create account */
+.create__account{
+  
+    background-image: url('img/createaccount.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  
+  
+}
